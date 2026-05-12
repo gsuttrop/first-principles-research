@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -225,6 +226,7 @@ footer{border-top:1px solid var(--rule);padding:28px 48px;display:flex;justify-c
   <div class="nav-links">
     <button class="nb on" id="nb-home" onclick="go('home')">Home</button>
     <button class="nb" id="nb-research" onclick="go('research')">Research</button>
+    <button class="nb" id="nb-writing" onclick="go('writing')">Writing</button>
     <button class="nb" id="nb-about" onclick="go('about')">About</button>
   </div>
   <div class="nav-live"><span class="dot"></span>Jan 2026</div>
@@ -292,48 +294,6 @@ footer{border-top:1px solid var(--rule);padding:28px 48px;display:flex;justify-c
             <div class="cmet"><div class="cml">Sector</div><div class="cmv">Telco</div></div>
             <div class="cmet"><div class="cml">Status</div><div class="cmv b">In progress</div></div>
           </div>
-          <div class="ccta dim">Coming soon</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="philbar">
-    <div class="wrap">
-      <div class="phil-inner">
-        <div class="phil-lbl">Approach</div>
-        <div class="phil-p">Every analysis is built from first principles — starting with <strong>discounted cash flow modelling</strong>, cross-checked against relative multiples, and stress-tested through bull, base, and bear scenarios. WACC is derived via CAPM with company-specific risk adjustments.</div>
-        <div class="phil-p">The goal is not price prediction but <strong>structured thinking about value</strong> — understanding where the market may be mispricing risk or ignoring structural tailwinds. Research is independently produced with no commercial interests.</div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="fbrand">First Principles Research · Rotterdam, 2026</div>
-    <div class="fdisc">All analyses are for educational and informational purposes only. Not investment advice. Financial data is estimated for analytical purposes and should not be relied upon for investment decisions.</div>
-  </footer>
-</div>
-
-  <!-- WRITING PREVIEWS -->
-  <div class="wrap">
-    <div class="sec" style="padding-bottom:0">
-      <div class="sec-hd">
-        <div><div class="sec-label">Latest Writing</div><div class="sec-title">From the Notebook</div></div>
-        <button class="nb" onclick="go('writing')" style="font-size:13px;color:var(--green);background:none;border:none;cursor:pointer;padding:0">All writing →</button>
-      </div>
-      <div class="grid2">
-        <div class="card" onclick="window.open('https://substack.com/@glensuttrop','_blank')">
-          <div class="ctop"><div class="cticker">Essay · Jan 2026</div><span class="badge bd">Published</span></div>
-          <div class="cco" style="font-size:18px">AI Will Not Kill Marketing</div>
-          <div class="csec">On AI tools, cognitive disengagement, and why positioning is not a prompt</div>
-          <p class="cdesc">Over the past few days, I started experimenting with AI tools like Higgsfield to produce marketing reels. What stood out more than the output was the experience — a specific cognitive shift that happens when you outsource large parts of your thinking to AI systems.</p>
-          <div class="ccta">Read on Substack →</div>
-        </div>
-        <div class="card" style="opacity:.8;cursor:default;">
-          <div class="ctop"><div class="cticker">Book Notes · Coming soon</div><span class="badge bw">In Progress</span></div>
-          <div class="cco" style="font-size:18px">Technological Revolutions & Financial Capital</div>
-          <div class="csec">Carlota Perez — notes and implications for today</div>
-          <p class="cdesc">Perez's framework for how major technological revolutions unfold — installation period, crash, deployment — and what it might mean for where we are now with AI, infrastructure, and emerging market capital flows.</p>
           <div class="ccta dim">Coming soon</div>
         </div>
       </div>
@@ -784,58 +744,65 @@ footer{border-top:1px solid var(--rule);padding:28px 48px;display:flex;justify-c
   <footer><div class="fbrand">First Principles Research · 2026</div><div class="fdisc">For educational purposes only. Not investment advice.</div></footer>
 </div>
 
-  <!-- ═══════════════ WRITING ═══════════════ -->
+<!-- WRITING -->
 <div class="pg" id="pg-writing">
   <div class="wrap">
     <div class="sec">
       <div class="sec-hd">
-        <div><div class="sec-label">Writing</div><div class="sec-title">Essays & Notes</div></div>
-        <div class="sec-note">Substack: <a href="https://substack.com/@glensuttrop" target="_blank" style="color:var(--green);text-decoration:none;font-family:var(--mono);font-size:11px;">@glensuttrop</a></div>
+        <div>
+          <div class="sec-label">Writing</div>
+          <div class="sec-title">Essays &amp; Notes</div>
+        </div>
+        <div class="sec-note">
+          <a href="https://substack.com/@glensuttrop" target="_blank" style="color:var(--green);text-decoration:none;font-family:var(--mono);font-size:11px;">@glensuttrop on Substack</a>
+        </div>
       </div>
-      <div style="max-width:680px;margin-bottom:32px;">
-        <p style="font-size:14px;color:var(--ink3);line-height:1.75;font-family:var(--serif);font-weight:300;">A place for thinking out loud — book notes, essays on technology and markets, and occasional philosophy. Not polished takes, just honest ones. Full articles on Substack, previews here.</p>
+      <div style="max-width:640px;margin-bottom:32px;">
+        <p style="font-size:14px;color:var(--ink3);line-height:1.8;font-family:var(--serif);font-weight:300;">A place for thinking out loud — book notes, essays on technology and markets, and occasional philosophy. Not polished takes, just honest ones. Full articles on Substack, previews here.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:12px;overflow:hidden;">
 
-        <!-- Article 1 -->
         <div style="background:white;padding:28px 32px;cursor:pointer;" onclick="window.open('https://substack.com/@glensuttrop','_blank')">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;">
             <div style="flex:1;">
               <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;">Essay · January 2026</div>
               <div style="font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:-0.01em;margin-bottom:8px;">AI Will Not Kill Marketing</div>
-              <p style="font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:16px;font-family:var(--serif);font-weight:300;max-width:560px;">On cognitive disengagement, the 4 P's, and why the "vessel of positioning" cannot be replaced by a prompt. Includes reflections on experimenting with Higgsfield, Kling, and Seedance for AI-generated video ads — and what the experience revealed about how we think when we stop thinking.</p>
+              <p style="font-size:14px;color:var(--ink3);line-height:1.75;margin-bottom:16px;font-family:var(--serif);font-weight:300;max-width:560px;">On cognitive disengagement, the 4 P's, and why the vessel of positioning cannot be replaced by a prompt. Reflections on experimenting with Higgsfield, Kling, and Seedance for AI-generated video ads — and what the experience revealed about how we think when we stop thinking.</p>
               <div style="font-family:var(--sans);font-size:13px;font-weight:500;color:var(--green);">Read on Substack →</div>
             </div>
-            <span class="badge bd" style="flex-shrink:0;margin-top:4px;">Published</span>
+            <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.06em;padding:3px 9px;border-radius:4px;font-weight:500;flex-shrink:0;margin-top:4px;background:var(--bg2);color:var(--ink3);border:1px solid var(--rule);">Published</span>
           </div>
         </div>
 
-        <!-- Article 2 — coming soon -->
-        <div style="background:white;padding:28px 32px;opacity:.75;">
+        <div style="background:white;padding:28px 32px;opacity:.7;">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;">
             <div style="flex:1;">
               <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;">Book Notes · Coming soon</div>
-              <div style="font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:-0.01em;margin-bottom:8px;">Technological Revolutions & Financial Capital — Carlota Perez</div>
-              <p style="font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:16px;font-family:var(--serif);font-weight:300;max-width:560px;">Perez's framework for how major technological revolutions unfold — installation period, turning point, deployment — and what it implies for where we are now with AI, infrastructure investment cycles, and whether emerging markets can capture the deployment phase this time around.</p>
+              <div style="font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:-0.01em;margin-bottom:8px;">Technological Revolutions &amp; Financial Capital</div>
+              <p style="font-size:14px;color:var(--ink3);line-height:1.75;margin-bottom:16px;font-family:var(--serif);font-weight:300;max-width:560px;">Notes on Carlota Perez's framework — installation period, turning point, deployment — and what it implies for AI, infrastructure investment cycles, and whether emerging markets can capture the deployment phase this time around.</p>
               <div style="font-family:var(--sans);font-size:13px;font-weight:500;color:var(--ink3);">Coming soon</div>
             </div>
-            <span class="badge bw" style="flex-shrink:0;margin-top:4px;">In Progress</span>
+            <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.06em;padding:3px 9px;border-radius:4px;font-weight:500;flex-shrink:0;margin-top:4px;background:#eff6ff;color:#1e3a5f;border:1px solid #bfdbfe;">In Progress</span>
           </div>
         </div>
 
       </div>
     </div>
   </div>
-  <footer><div class="fbrand">First Principles Research · 2026</div><div class="fdisc">For educational purposes only. Not investment advice.</div></footer>
+  <footer>
+    <div class="fbrand">First Principles Research · 2026</div>
+    <div class="fdisc">For educational purposes only. Not investment advice.</div>
+  </footer>
 </div>
-  
+
+
 <script>
 function go(p){
   document.querySelectorAll('.pg').forEach(x=>x.classList.remove('on'));
   document.querySelectorAll('.nb').forEach(x=>x.classList.remove('on'));
   const el=document.getElementById('pg-'+p);
   if(el){el.classList.add('on');window.scrollTo(0,0);}
-  const m={home:'nb-home',research:'nb-research',byd:'nb-research',telkom:'nb-research',about:'nb-about'};
+  const m={home:'nb-home',research:'nb-research',byd:'nb-research',telkom:'nb-research',writing:'nb-writing',about:'nb-about'};
   const nb=document.getElementById(m[p]);if(nb)nb.classList.add('on');
 }
 // Make Telkom card clickable from research/home
